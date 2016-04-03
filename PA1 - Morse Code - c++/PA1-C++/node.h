@@ -6,7 +6,8 @@
 #ifndef NODE_H
 #define NODE_H
 
-class Node {
+class Node 
+{
 public:
 	Node(const char, const int);
 	Node * GetNext();
@@ -16,12 +17,11 @@ public:
 
 	Node * next;
 	Node * prev;
+	//~Node();
 private:
 	Node();
-	~Node();
 	const char	key_;
 	const int	morse_;
-
 };
 
 #endif

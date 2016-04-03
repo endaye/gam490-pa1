@@ -6,6 +6,10 @@
 #ifndef TEST_H
 #define TEST_H
 
-void test_1();
+#include "link_list.h"
+
+void test_1(LinkList * &);
+void test_2(LinkList * &);
+void test_3(LinkList * &);
 
 #endif

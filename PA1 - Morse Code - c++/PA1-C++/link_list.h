@@ -10,17 +10,18 @@
 // forward declaration - always try to do this before including a header, in a header (Keenan)
 class Node;
 
-class LinkList {
+class LinkList 
+{
 public:
 	LinkList();
 	~LinkList();
 
 	static void CreateLinkedList();
-	static Node * & GetListHead();
+	static Node * GetListHead();
 	static void InsertNode(Node * &, const char, const int);
-	static void DeletNode();
+	static void DeletNode(const char);
+	static void SelectSort();
 	static void PrintList();
-	
 	
 private:
 	static Node * head_;

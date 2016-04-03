@@ -6,15 +6,21 @@
 
 #include "node.h"
 
-Node::Node(const char key, const int morse)
-	:prev(0), next(0), key_(key), morse_(morse) {
+//Node::~Node() 
+//{
+//
+//}
 
-}
+Node::Node(char key, int morse)
+	:prev(0), next(0), key_(key), morse_(morse) 
+{}
 
-const char Node::GetKey() {
+const char Node::GetKey() 
+{
 	return this->key_;
 }
 
-const int Node::GetMorse() {
+const int Node::GetMorse() 
+{
 	return this->morse_;
 }
