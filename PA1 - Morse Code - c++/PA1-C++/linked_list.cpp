@@ -1,22 +1,22 @@
 // PA1 - Morse Data Code
-// link_list.cpp
+// linked_list.cpp
 //
 // Created by Yuancheng Zhang on 4/2/2016
 
 #include <stdio.h>
-#include "link_list.h"
+#include "linked_list.h"
 #include "node.h"
 
-Node * LinkList::head_ = 0;
+Node * LinkedList::head_ = 0;
 
-LinkList::LinkList() {}
+LinkedList::LinkedList() {}
 
-LinkList::~LinkList()
+LinkedList::~LinkedList()
 {
 	head_ = 0;
 }
 
-void LinkList::CreateLinkedList()
+void LinkedList::CreateLinkedList()
 {
 	InsertNode(head_, 'A', 12);
 	Node * node = head_;
@@ -47,12 +47,12 @@ void LinkList::CreateLinkedList()
 	InsertNode(node, 'Z', 2211); node = node->next;
 }
 
-Node * LinkList::GetListHead()
+Node * LinkedList::GetListHead()
 {
 	return head_;
 }
 
-void LinkList::InsertNode(Node * & node, const char key, const int morse)
+void LinkedList::InsertNode(Node * & node, const char key, const int morse)
 {
 	if (!node)
 	{
@@ -68,12 +68,12 @@ void LinkList::InsertNode(Node * & node, const char key, const int morse)
 	}
 }
 
-void LinkList::DeletNode(const char key)
+void LinkedList::DeletNode(const char key)
 {
 	Node * node = GetListHead();
 	while (node)
 	{
-		if (node->GetKey() == key)
+		if (node->GetLetter() == key)
 		{
 			if (node->prev && node->next)
 			{
@@ -105,7 +105,7 @@ void LinkList::DeletNode(const char key)
 	}
 }
 
-void LinkList::SelectSort()
+void LinkedList::SelectSort()
 {
 	Node * curr_node = GetListHead();
 	if (curr_node && curr_node->next)
@@ -192,16 +192,16 @@ void LinkList::SelectSort()
 	}
 }
 
-void LinkList::PrintList()
+void LinkedList::printAllList()
 {
 	Node * node = GetListHead();
 	int count = 1;
 	while (node)
 	{
-		printf("#%02d: %c, %d\n", count, node->GetKey(), node->GetMorse());
-		//printf("%c ", node->GetKey());
+		//printf("#%02d: %c, %d\n", count, node->GetLetter(), node->GetMorse());
+		printf("%c ", node->GetLetter());
 		node = node->next;
 		count++;
 	}
-	printf("\n");
+	printf("\n\n");
 }

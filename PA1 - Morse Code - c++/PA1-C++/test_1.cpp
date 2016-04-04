@@ -3,13 +3,13 @@
 //
 // Created by Yuancheng Zhang on 4/2/2016
 
-#include "link_list.h"
+#include "linked_list.h"
 #include <stdio.h>
 
-void test_1(LinkList * &link_list) 
+void test_1(LinkedList * &linked_list)
 {
 	printf("Test 1: Insert data to a List\n");
-	link_list = new LinkList();
-	link_list->CreateLinkedList();
-	link_list->PrintList();
+	linked_list = new LinkedList();
+	linked_list->CreateLinkedList();
+	linked_list->printAllList();
 }

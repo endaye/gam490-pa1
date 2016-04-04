@@ -3,12 +3,12 @@
 //
 // Created by Yuancheng Zhang on 4/3/2016
 
-#include "link_list.h"
+#include "linked_list.h"
 #include <stdio.h>
 
-void test_3(LinkList * &link_list)
+void test_3(LinkedList * &linked_list)
 {
 	printf("Test 3: Sort the data\n");
-	link_list->SelectSort();
-	link_list->PrintList();
+	linked_list->SelectSort();
+	linked_list->printAllList();
 }

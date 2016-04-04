@@ -10,9 +10,7 @@ class Node
 {
 public:
 	Node(const char, const int);
-	Node * GetNext();
-	Node * GetPrev();
-	const char	GetKey();
+	const char	GetLetter();
 	const int	GetMorse();
 
 	Node * next;
@@ -20,7 +18,7 @@ public:
 	//~Node();
 private:
 	Node();
-	const char	key_;
+	const char	letter_;
 	const int	morse_;
 };
 

@@ -76,7 +76,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="link_list.cpp" />
+    <ClCompile Include="linked_list.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="node.cpp" />
     <ClCompile Include="test_1.cpp" />
@@ -84,7 +84,7 @@
     <ClCompile Include="test_3.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="link_list.h" />
+    <ClInclude Include="linked_list.h" />
     <ClInclude Include="node.h" />
     <ClInclude Include="test.h" />
   </ItemGroup>

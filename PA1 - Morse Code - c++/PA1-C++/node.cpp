@@ -11,13 +11,13 @@
 //
 //}
 
-Node::Node(char key, int morse)
-	:prev(0), next(0), key_(key), morse_(morse) 
+Node::Node(char letter, int morse)
+	:prev(0), next(0), letter_(letter), morse_(morse)
 {}
 
-const char Node::GetKey() 
+const char Node::GetLetter() 
 {
-	return this->key_;
+	return this->letter_;
 }
 
 const int Node::GetMorse() 
